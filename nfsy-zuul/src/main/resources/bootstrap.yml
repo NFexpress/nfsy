@@ -1,0 +1,21 @@
+server:
+  port: 8200
+spring:
+  application:
+    name: nfsy-zuul
+  cloud:
+    config:
+      name: neo-config
+      profile: dev
+      discovery:
+        service-id: nfsy-config
+        enabled: true
+zuul:
+  sensitive-headers:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+ribbon:
+  ReadTimeOut: 10000
+  ConnectTimeOut: 10000
