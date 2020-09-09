@@ -14,6 +14,7 @@
         <module>nfsy-pojo</module>
         <module>nfsy-zuul</module>
         <module>nfsy-utils</module>
+        <module>nfsy-user</module>
     </modules>
 
     <parent>

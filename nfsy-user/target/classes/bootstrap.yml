@@ -1,0 +1,19 @@
+server:
+  port: 8400
+spring:
+  application:
+    name: nfsy-user
+  cloud:
+    config:
+      discovery:
+        service-id: nfsy-config
+        enabled: true
+      name: neo-config
+      profile: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+feign:
+  hystrix:
+    enabled: true
