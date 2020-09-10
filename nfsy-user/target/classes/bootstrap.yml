@@ -10,6 +10,22 @@ spring:
         enabled: true
       name: neo-config
       profile: dev
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+  mail:
+    host: smtp.qq.com
+    username: 2905997477@qq.com
+    password: dulqjeeobushdghj
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
 eureka:
   client:
     service-url:
@@ -17,3 +33,6 @@ eureka:
 feign:
   hystrix:
     enabled: true
+mybatis:
+  type-aliases-package: com.nf.pojo
+  mapper-locations: classpath:mapping/*Mapper
